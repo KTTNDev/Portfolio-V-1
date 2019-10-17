@@ -25,12 +25,24 @@ app.set('views', path.join(__dirname, 'views'));
 // 2.มาแก้นามสกุลไฟล์ที่เราจะใช้
 app.set('view engine', 'ejs');
 
+
+
+// rout css js ให้ node
+app.use(express.static(__dirname + '/public'));
+
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(express.static(__dirname + '/public'));
+
+
+//สร้าง function descriptionText ขึ้นมาเพื่อกำหนดความยาว text
+app.locals.descriptionText = function(text, length) {
+    return text.substring(0, length);
+};
+
 
 //1.นี่คือส่วนที่เรียกใช้ Index คือส่วน Router
 app.use('/', indexRouter);
