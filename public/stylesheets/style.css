@@ -1,22 +1,236 @@
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-header {
-  margin-top: 20px;
+img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
 }
 
 header nav {
-  background: #ffbc02;
-  padding: 2rem;
+    padding: 20px;
+    background: #ffbc02;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    left: 60px;
+    z-index: 100;
 }
 
-header p {
-  font-size: 1.1rem;
-  margin: 0;
-  color: #fff;
+header nav h5,
+header nav h6 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #fff;
+    font-weight: inherit;
 }
+
+header .head {
+    margin: 0 50px;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+header .icon-address {
+    font-size: 2.2rem;
+    display: inline-block;
+}
+
+header .icon-address::before {
+    font-family: FontAwesome;
+    color: #fff;
+    margin-right: 20px;
+    content: "\f041";
+}
+
+header .icon-phone {
+    font-size: 2.2rem;
+    display: inline-block;
+}
+
+header .icon-phone::before {
+    font-family: FontAwesome;
+    margin-right: 20px;
+    color: #fff;
+    content: "\f095";
+}
+
+header .icon-email {
+    font-size: 2.2rem;
+    display: inline-block;
+}
+
+header .icon-email::before {
+    font-family: FontAwesome;
+    color: #fff;
+    margin-right: 20px;
+    content: "\f086";
+}
+
+header .detail {
+    display: inline-block;
+    color: #fff;
+}
+
+.info {
+    background-image: url(https://images.unsplash.com/photo-1571384192873-ad1703337b32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.info:before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.info:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    z-index: -1;
+    background: #fff;
+}
+
+.info .bio {
+    margin-top: -70px;
+}
+
+.info .photo-card {
+    background: #fff;
+    text-align: center;
+    margin: 16rem 1rem 0;
+    height: 335px;
+}
+
+.info .photo-card h1,
+.info .photo-card h2,
+.info .photo-card h3,
+.info .photo-card h4,
+.info .photo-card h5,
+.info .photo-card h6,
+.info .photo-card p {
+    color: #4e4e4e;
+}
+
+.info .photo-card .photo-profile img {
+    margin-top: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    text-align: center;
+    top: -100px;
+    position: relative;
+}
+
+.info .photo-card .bio-career h5 {
+    color: #ffbc02;
+    margin: -10px 0 20px 0;
+}
+
+.info .photo-card li {
+    list-style: none;
+    line-height: 20px;
+}
+
+.info .social {
+    text-align: center;
+}
+
+.info .social li {
+    display: inline-block;
+}
+
+.info .social li a {
+    height: 35px;
+    line-height: 35px;
+    width: 35px;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+    position: relative;
+    margin: 0 5px 5px;
+    background: #887392;
+    color: #fff;
+}
+
+.info .social li a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 20px;
+    background: #ffa804;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.info .social .icon-facebook:before {
+    font-family: FontAwesome;
+    color: #fff;
+    font-style: normal;
+    content: "\f041";
+}
+
+.info .social .icon-gmail:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    color: #fff;
+    content: "\f086";
+}
+
+.info .social .icon-instagram:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    color: #fff;
+    content: "\f086";
+}
+
+.info .social .icon-github:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    color: #fff;
+    content: "\f086";
+}
+
+.info .social .icon-twitter:before {
+    font-family: FontAwesome;
+    font-style: normal;
+    color: #fff;
+    content: "\f086";
+}
+
+
 /*# sourceMappingURL=style.css.map */

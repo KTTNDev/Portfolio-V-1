@@ -4,17 +4,219 @@
     box-sizing: border-box;
 }
 
+body {
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
 $color-white :#fff;
-$color-nav :rgb(255, 188, 2);
+$color-orange :rgb(255, 188, 2);
+$color-grey:rgb(78, 78, 78);
 header {
-    margin-top: 20px;
     nav {
-        background: $color-nav;
-        padding: 2rem;
+        padding: 20px;
+        background: $color-orange;
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        left: 60px;
+        z-index: 100;
+        h5,
+        h6 {
+            font-size: 1.1rem;
+            line-height: 1.5;
+            margin: 0;
+            color: $color-white;
+            font-weight: inherit;
+        }
     }
-    p {
-        font-size: 1.1rem;
-        margin: 0;
+    .head {
+        margin: 0 50px;
+        padding: 1.5rem;
+        border-radius: 5px;
+    }
+    .icon-address {
+        font-size: 2.2rem;
+        display: inline-block;
+        &::before {
+            font-family: FontAwesome;
+            color: $color-white;
+            margin-right: 20px;
+            content: "\f041";
+        }
+    }
+    .icon-phone {
+        font-size: 2.2rem;
+        display: inline-block;
+        &::before {
+            font-family: FontAwesome;
+            margin-right: 20px;
+            color: $color-white;
+            content: "\f095";
+        }
+    }
+    .icon-email {
+        font-size: 2.2rem;
+        display: inline-block;
+        &::before {
+            font-family: FontAwesome;
+            color: $color-white;
+            margin-right: 20px;
+            content: "\f086";
+        }
+    }
+    .detail {
+        display: inline-block;
         color: $color-white;
     }
 }
+
+//info
+.info {
+    background-image: url(https://images.unsplash.com/photo-1571384192873-ad1703337b32?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-position: center;
+    background-size: cover;
+    padding: 2rem;
+    height: auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .2);
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 150px;
+        z-index: -1;
+        background: #fff;
+    }
+    .bio {
+        margin-top: -70px;
+    }
+    .photo-card {
+        background: $color-white;
+        text-align: center;
+        margin: 16rem 1rem 0;
+        height: 335px;
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            color: $color-grey;
+        }
+        .photo-profile {
+            img {
+                margin-top: 0;
+                width: 200px;
+                height: 200px;
+                border-radius: 100px;
+                text-align: center;
+                top: -100px;
+                position: relative;
+            }
+        }
+        .bio-career {
+            h5 {
+                color: $color-orange;
+                margin: -10px 0 20px 0;
+            }
+        }
+        li {
+            list-style: none;
+            line-height: 20px;
+        }
+    }
+    .social {
+        text-align: center;
+        li {
+            display: inline-block;
+            a {
+                height: 35px;
+                line-height: 35px;
+                width: 35px;
+                border-radius: 20px;
+                overflow: hidden;
+                z-index: 1;
+                position: relative;
+                margin: 0 5px 5px;
+                background: #887392;
+                color: #fff;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    z-index: -1;
+                    border-radius: 20px;
+                    background: #ffa804;
+                    -webkit-transition: all .2s ease;
+                    transition: all .2s ease;
+                    -webkit-transform: scale(0);
+                    transform: scale(0);
+                }
+            }
+        }
+        .icon-facebook {
+            &:before {
+                font-family: FontAwesome;
+                color: $color-white;
+                font-style: normal;
+                content: "\f041";
+            }
+        }
+        .icon-gmail {
+            &:before {
+                font-family: FontAwesome;
+                font-style: normal;
+                color: $color-white;
+                content: "\f086";
+            }
+        }
+        .icon-instagram {
+            &:before {
+                font-family: FontAwesome;
+                font-style: normal;
+                color: $color-white;
+                content: "\f086";
+            }
+        }
+        .icon-github {
+            &:before {
+                font-family: FontAwesome;
+                font-style: normal;
+                color: $color-white;
+                content: "\f086";
+            }
+        }
+        .icon-twitter {
+            &:before {
+                font-family: FontAwesome;
+                font-style: normal;
+                color: $color-white;
+                content: "\f086";
+            }
+        }
+    }
+}
+
+//photo-card

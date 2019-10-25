@@ -6,108 +6,246 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="/javascripts/script.js"></script>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link rel="stylesheet" href="/stylesheets/blog-card.css">
+    <link rel="stylesheet" href="/stylesheets/fluidbox.min.css">
+    <link rel="stylesheet" href="/stylesheets/portfolio-filter.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
 
-    <header class="container">
-        <nav class="row">
-            <div class="col address">
-                <p>3008 Sarah Drive</p>
-                <p> Franklin,LA 70538</p>
+    <!-- <header>
+        <nav class="row head">
+            <div class="col-sm-6 col-md-6 col-lg-4 address">
+                <div class="icon-address">
+                </div>
+                <div class="detail">
+                    <h5>3008 Sarah Drive</h5>
+                    <h6>Franklin,LA 70538</h6>
+                </div>
             </div>
-            <div class="col phone">
-                <p>337-4139538 </p>
-                <p>MIN - FRI,8AM - 7PM</p>
+            <div class="col-sm-6 col-md-6 col-lg-4 phone">
+                <div class="icon-phone">
+                </div>
+                <div class="detail">
+                    <h5>337-4139538 </h5>
+                    <h6> MIN - FRI,8AM - 7PM</h6>
+                </div>
             </div>
-            <div class="col email">
-                <p>contact@colorlib.com </p>
-                <p>REPLY IN 24 HOURS</p>
+            <div class="col-sm-6 col-md-6 col-lg-4 email">
+                <div class="icon-email">
+                </div>
+                <div class="detail">
+                    <h5>kittinanporlob@colorlib.com </h5>
+                    <h6> REPLY IN 24 HOURS</h6>
+                </div>
             </div>
-        </nav>
-        <div class=" photo-card">
-            <img src="" alt="" class="photo">
-            <div class="bio">
-                <div class="name"></div>
-                <div class="career"></div>
-                <div class="birthday"></div>
-            </div>
-        </div>
-        <!-- end photo-card -->
-        <div class="row social">
-            <div class="item1"></div>
-            <div class="item2"></div>
-            <div class="item3"></div>
-            <div class="item4"></div>
-            <div class="item5"></div>
-        </div>
-        <!-- end social -->
+
+        </nav> -->
+
     </header>
     <!-- end header -->
-    <section class="Portfolio">
-        <div class="container">
 
-            <div class="portfolio-head">
-                <h1>portfolio</h1>
-            </div>
-            <div class="row type">
-                <div class="col">
-                    <h3>My Work</h3>
+    <section class="info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-1  col-lg-2"></div>
+                <div class="col-md-10  col-lg-8">
+                    <div class=" photo-card">
+                        <div class="photo-profile">
+                            <img src="https://images.unsplash.com/photo-1543270122-f7a11ad44f3a?ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" class="photo">
+                        </div>
+                        <div class="bio">
+                            <div class="bio-name space">
+                                <h1>Kittinan Ponrop</h1>
+                            </div>
+                            <div class="bio-career space">
+                                <h5>Web Developer</h5>
+                            </div>
+                            <li class="info-born">
+                                <p>
+                                    <b> BORN :</b> April 18, 1997
+                                </p>
+                            </li>
+                            <li class="info-EMAIL">
+                                <p>
+                                    <b> EMAIL :</b> kittinanpolrob@gmail.com
+                                </p>
+                            </li>
+                            <li class="info-STATUS">
+                                <p>
+                                    <b> MARITAL STATUS :</b> Single
+                                </p>
+                            </li>
+                        </div>
+
+                    </div>
                 </div>
-                <div class="col grid-type">
-                    <a href="/all">all</a>
-                    <a href="/web design">web design</a>
-                    <a href="/branding">branding</a>
-                    <a href="/graphic design">graphic design</a>
-                </div>
-                <div class="col"></div>
             </div>
-            <!-- end row type -->
+            <!-- end container -->
+            <ul class="social">
+                <li>
+                    <a href="#"><i class="icon-facebook"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-gmail"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-github"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-twitter"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="icon-instagram"></i></a>
+                </li>
+            </ul>
+            <!-- end social -->
         </div>
-        <!-- end container -->
-        <div class="gallery"></div>
+        <!-- end photo-card -->
+
     </section>
+    <!-- end info -->
+
+    <section class="portfolio-section section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="heading">
+                        <h3><b>Portfolio</b></h3>
+                        <h6 class="font-lite-black"><b>MY WORK</b></h6>
+                    </div>
+                </div>
+                <!-- col-sm-4 -->
+                <div class="col-sm-8">
+                    <div class="portfolioFilter clearfix margin-b-80">
+                        <a href="#" data-filter="*" class="current"><b>ALL</b></a>
+                        <a href="#" data-filter=".web-design"><b>WEB DESIGN</b></a>
+                        <a href="#" data-filter=".branding"><b>BRANDING</b></a>
+                        <a href="#" data-filter=".graphic-design"><b>GRAPHIC DESIGN</b></a>
+                    </div>
+                    <!-- portfolioFilter -->
+                </div>
+                <!-- col-sm-8 -->
+            </div>
+            <!-- row -->
+        </div>
+        <!-- container -->
+
+        <div class="portfolioContainer">
+
+            <div class="p-item web-design">
+                <a href="images/portfolio-1-600x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-1-600x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item branding graphic-design">
+                <a href="images/portfolio-7-600x800.jpg" data-fluidbox>
+                    <img src="images/portfolio-7-600x800.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item web-design">
+                <a href="images/portfolio-2-600x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-2-600x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item p-item-2 graphic-design">
+                <a class="img" href="images/portfolio-8-300x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-8-300x400.jpg" alt=""></a>
+                <a class="img" href="images/portfolio-9-300x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-9-300x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item branding graphic-design">
+                <a href="images/portfolio-3-600x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-3-600x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item graphic-design web-design">
+                <a href="images/portfolio-4-600x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-4-600x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item  graphic-design branding">
+                <a href="images/portfolio-5-600x800.jpg" data-fluidbox>
+                    <img src="images/portfolio-5-600x800.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item web-design branding">
+                <a href="images/portfolio-6-600x800.jpg" data-fluidbox>
+                    <img src="images/portfolio-6-600x800.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+            <div class="p-item p-item-2 graphic-design">
+                <a class="img" href="images/portfolio-10-300x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-10-300x400.jpg" alt=""></a>
+                <a class="img" href="images/portfolio-11-300x400.jpg" data-fluidbox>
+                    <img src="images/portfolio-11-300x400.jpg" alt=""></a>
+            </div>
+            <!-- p-item -->
+
+        </div>
+        <!-- portfolioContainer -->
+
+    </section>
+    <!-- portfolio-section -->
+
     <!-- end portfolio -->
     <section class="about-me">
-        <div class="row">
-            <div class="col about-me-head">
-                <h1>About me</h1>
-                <h3>PROFESSIONAL PATH</h3>
-            </div>
-            <div class="col intro">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid quibusdam, veniam debitis id placeat, ipsa modi repudiandae praesentium eligendi, fuga consequatur. Consequuntur odio iure nulla delectus aperiam. Modi, delectus?</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 offset-md-6">
+        <div class="container">
+            <div class="about-me">
                 <div class="row">
-                    <div class="col skill1">html5</div>
-                    <div class="col skill2">html5</div>
-                    <div class="col skill3">html5</div>
-                    <div class="col skill4">html5</div>
-                    <div class="col skill5">html5</div>
+                    <div class="col about-me-head" style="text-transform:capitalize;">
+                        <h3>About me</h3>
+                        <h6>PROFESSIONAL PATH</h6>
+                    </div>
+                    <div class="col intro">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid quibusdam, veniam debitis id placeat, ipsa modi repudiandae praesentium eligendi, fuga consequatur. Consequuntur odio iure nulla delectus aperiam. Modi,
+                            delectus?
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 offset-md-6">
+                        <div class="row skills" style="text-transform: uppercase;">
+                            <div class="col skill1">html5</div>
+                            <div class="col skill2">html5</div>
+                            <div class="col skill3">html5</div>
+                            <div class="col skill4">html5</div>
+                            <div class="col skill5">html5</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- about me -->
     <section class="work-experience">
-        <div class="row">
-            <div class="col work-experience-head">
-                <h1>Work Experience</h1>
-                <h2>PREVIOUS JOBS</h2>
-            </div>
-            <div class="col work-name">
-                <h3>JUNIOR PROJECT MANAGER</h3>
-                <h4>DESIGN STUDIO</h4>
-                <h4>MARCH 2015 - PRESENT</h4>
-                <p>Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis
-                    non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.</p>
+        <div class="container">
+            <div class="experiend">
+                <div class="row">
+                    <div class="col work-experience-head">
+                        <h3>Work Experience</h3>
+                        <h6>PREVIOUS JOBS</h6>
+                    </div>
+                    <div class="col work-name">
+                        <h3>JUNIOR PROJECT MANAGER</h3>
+                        <h4>DESIGN STUDIO</h4>
+                        <h4>MARCH 2015 - PRESENT</h4>
+                        <p>Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit, quis consequat nulla effi citur at. Maecenas sed
+                            massa tristique.Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -172,7 +310,13 @@
                         <input type="password" id="password" required placeholder="Password" />
                         <button onclick="validation()">login</button>
 
-
+                        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+                        <script src="javascripts/jquery-3.2.1.min.js"></script>
+                        <script src="javascripts/bootstrap.js"></script>
+                        <script src="javascripts/isotope.pkgd.min.js"></script>
+                        <script src="javascripts/jquery.waypoints.min.js"></script>
+                        <script src="javascripts/jquery.fluidbox.min.js"></script>
+                        <script src="javascripts/script.js"></script>
 </body>
 
 </html>
